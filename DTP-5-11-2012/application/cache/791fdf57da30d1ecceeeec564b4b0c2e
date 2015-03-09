@@ -1,0 +1,390 @@
+1350145040TS---><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Ditch the Pitch</title>
+
+<link rel="stylesheet" href="http://amomin:81/ditchthepitch/assets/css/style.css" type="text/css" media="screen"/>
+
+	<!-- Add Dynamic CSS Sources and CSS Scripts -->
+				
+			<style type="text/css">
+					</style>
+	
+<script type="text/javascript" src="http://amomin:81/ditchthepitch/assets/js/cufon.js"></script>
+<script type="text/javascript" src="http://amomin:81/ditchthepitch/assets/js/myriad-pro.cufonfonts.js"></script>
+<script src="http://amomin:81/ditchthepitch/assets/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="http://amomin:81/ditchthepitch/assets/js/facebox/facebox.js" type="text/javascript"></script>
+<script src="http://amomin:81/ditchthepitch/assets/js/popup.js" type="text/javascript"></script>
+<!-- Adds the dynamic javascript files -->
+			
+<script type="text/javascript">
+
+Cufon.replace('#header .navigation li a, #footer .heading', { fontFamily: 'Myriad Pro Condensed', hover: true });
+Cufon.replace('#content .banner p, #content ul.registrationArea h3', { fontFamily: 'Myriad Pro Semibold', hover: true });
+Cufon.replace('#footer .col h3', { fontFamily: 'Myriad Pro Regular', hover: true });
+Cufon.replace('#bottleArea h1', { fontFamily: 'Myriad Pro Condensed', hover: true, textShadow: '1px 1px #666' });
+Cufon.replace('#footer .col h3,.banner strong', { fontFamily: 'Myriad Pro Regular', hover: true });
+Cufon.replace('#bottleArea h1', { fontFamily: 'Myriad Pro Condensed', hover: true, textShadow: '1px 1px #666' });
+Cufon.replace('.banner strong', { fontFamily: 'Myriad Pro Regular', hover: true, textShadow: '1px 1px #4e0503', hover: true });
+Cufon.replace('.content .banner p, #content ul.registrationArea h3', { fontFamily: 'Myriad Pro Semibold', hover: true });
+Cufon.replace('.dayContent strong', { fontFamily: 'Myriad Pro Regular', hover: true, textShadow: '1px 1px #4e0503',});
+
+function clearText(field) 
+{
+
+    if (field.defaultValue == field.value) field.value = '';
+
+    else if (field.value == '') field.value = field.defaultValue;
+
+}
+<!-- Add the javascript script text  --> 
+ 
+
+jQuery(document).ready(function($){
+	$('a[rel*=facebox]').facebox({
+	        loadingImage : 'http://amomin:81/ditchthepitch/assets/js/facebox/loading.gif',
+	        closeImage   : 'http://amomin:81/ditchthepitch/assets/js/facebox/closelabel.png'
+	      });
+	$("#winepref1").click(function(){
+		$("#content_pane1").hide();
+		$("#content_pane2").show();
+		
+	});	
+	
+    $("#wineprefback").click(function(){
+		    $("#content_pane2").hide();
+		    $("#content_pane1").show();
+		
+	    });	
+    
+    $("#loginsubmit").click(function(){
+        	
+			
+			var statuschk = true;
+			
+    		if($("#loginemail").val() == "")
+    		{
+				statuschk = false;
+				$("#err1").show();
+				
+            }
+    		else
+    		{
+    			statuschk = true;
+    			$("#err1").hide();
+        	}
+
+			if($("#loginpassword").val() == "")
+			{
+				statuschk = false;
+				$("#err2").show();
+			}
+			else
+			{
+				statuschk = true;
+				$("#err2").hide();
+			}	
+
+			if(statuschk == false)
+			{
+				$("#mainerror").show();
+			}
+			else
+			{
+				$("#mainerror").hide();
+				$("#formlogin").submit();
+			}
+        	
+        });
+
+   });
+
+jQuery(window).load(function(){
+	$("#statusmsg").delay(2800).fadeOut(900);
+	
+});
+
+</script>
+
+</head>
+
+<body> 
+
+<div id="header">
+        <div class="logo">
+            <a href="http://amomin:81/ditchthepitch/">
+                <img src="http://amomin:81/ditchthepitch/assets/images/logo.png" border="0" /></a>
+        </div>
+        <div class="topNav">
+        <div id="topsocial">
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fditchthepitch.com.au&amp;send=false&amp;layout=box_count&amp;width=98&amp;show_faces=true&amp;action=recommend&amp;colorscheme=light&amp;font&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:87px; height:62px;" allowTransparency="true"></iframe>
+            <a href="https://twitter.com/thewinegrowers" class="twitter-follow-button" data-width="65px" data-show-count="false" data-show-screen-name="false">Follow @thewinegrowers</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a href="#"><img src="http://amomin:81/ditchthepitch/assets/images/linkedin.png" border="0" /></a> 
+<a href="http://feedity.com/perthwebsitebuilders-com-au/UFtRUltV.rss"><img src="http://amomin:81/ditchthepitch/assets/images/feeds.png" height="22" width="21" border="0" /></a>
+		</div>			
+               
+            <ul class="topNavigation">
+	                            <li><a href="http://amomin:81/ditchthepitch/shoppingcart/displaycart"><b style="font-size:15px">Cart</b></a></li>
+                                <li><a href="#" id="loginlink" class='active'><b style="font-size:15px">Subscribe</b></a></li>
+                                <li><a href="http://amomin:81/ditchthepitch/home/privacy" >Private Policy</a></li>
+                <li><a href="http://amomin:81/ditchthepitch/home/terms" >Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="cb">
+        </div>
+        <div class="brd">
+        </div>
+                <ul class="navigation">
+            <li><a  href="http://amomin:81/ditchthepitch/">
+                                <img src="http://amomin:81/ditchthepitch/assets/images/Hom_icn.jpg" align="absmiddle" />
+                                Home</a></li>
+            <li><a class='current' href="http://amomin:81/ditchthepitch/home/howitwork">How it works</a></li>
+            <li><a  href="http://amomin:81/ditchthepitch/latestoffers">Recent offers</a></li>
+            <li><a  href="http://amomin:81/ditchthepitch/discussions">Discussions</a></li>
+            <li><a   href="http://amomin:81/ditchthepitch/home/history">History</a></li>
+            <li><a  href="http://amomin:81/ditchthepitch/home/faqs">FAQ's</a></li>
+            <li><a  href="http://amomin:81/ditchthepitch/contactus">Contact us</a></li>
+        </ul>
+<div  > </div>
+<div id="statusmsg" class="messege blue" style="display:none;">
+                    <p>
+                                           </p>
+	</div>
+</div>
+    
+<div id="loginpopup">
+       <div class="popup">
+                <div style="background-image:url('http://amomin:81/ditchthepitch/assets/images/bgContentArea.jpg');" class="content">
+
+<!-- LOGIN FORM -->	    
+<div id="loginform" >
+
+<a href="#" id="popupContactClose" class="close"><img src="http://amomin:81/ditchthepitch/assets/js/facebox/closelabel.png" title="close" class="close_image" /></a>
+<form action="http://amomin:81/ditchthepitch/auth/login" method="post" accept-charset="utf-8" name="formlogin" id="formlogin">
+<table class="block">
+	<tr>
+        <td style="width:75px" ><label for="login">Email:</label></td>
+		<td>
+		<input type="text" id="loginemail" class="input_reg" name="loginemail" /><span id="err1" class="hide error"> *</span></td>
+	</tr>
+<tr>
+<td>&nbsp;
+</td>
+</tr>
+	<tr>
+		<td><label for="login">Password:</label></td>
+		<td><input type="password" class="input_reg" id="loginpassword" name="loginpassword" /><span id="err2" class="hide error"> *</span></td>
+	</tr>
+
+
+		<tr>
+	<td>&nbsp;</td>
+		<td colspan="3">
+			<br>
+			<input type="checkbox" name="remember" value="1" id="remember" style="margin:0;padding:0"  />			<label for="remember">Remember me</label>		</td>
+	</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<a href="javascript:void(0);" name="loginsubmit" id="loginsubmit" ><img src="http://amomin:81/ditchthepitch/assets/images/login.png" alt="login" /></a>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><a href="auth/forgot_password/" style="float:right" style="float:right"	 class="forget">Forgotten password</a></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span id="mainerror" class="error hide">* All fields are required</span></td>
+</tr>
+</table>
+</form></div>
+</div>
+</div>
+</div>
+<div class="loginpopup_hide loginpopup_overlayBG" style="display:none;" id="loginpopup_overlay"></div>
+
+        <!-- 	CONTENT -->
+							
+
+<div id="standardArc">
+    </div>
+<div id="outerContent">
+        <div class="content howitworks">
+            <div class="banner">
+                <img src="http://amomin:81/ditchthepitch/assets/images/Howitwork.png">
+                 <p class="bannerheading"><b>Ditch the Pitch </b>promotes the responsible service of alcohol. To participate in the wine evaluations promoted within this site, you will have to be aged 18 years or older and be based in Australia. 
+            <div class="cb">
+            </div>
+        </div>
+        <div class="textColumns">
+            <div class="box box1">
+              <h4>1. Registration:</h4>
+              <p>If you choose to register, you will be asked to complete some simple questions, including verification that you are 18 years of age or older through entering your date of birth. A sample of the registration form that you will be asked to complete on line is available <a href="http://amomin:81/ditchthepitch/sampleregistration/registrationform/1">Sample Registration Form.</a></p>
+              <p>The purpose of the questions asked during registration is to ensure that;  you reside in Australia,  we have accurate records of your contact details, and  we know your wine style preferences. </p>
+              <p>Why do we need to know your wine style preferences? We are only interested in gathering relevant feedback. We are not too concerned about your level of wine tasting experience to participate but we are concerned that we send you a wine style that is non-preferred. Put another way, we do not want to send a Chardonnay to a non-Chardonnay drinker, nor would we want to send a Moscato to someone who only drinks dry wine and, similarly, we do not want the send a Shiraz to someone who only enjoys white wine. </p>
+              <p>You will not be asked for your ‘wine sample’ delivery address during registration. You will be asked for this when you are contacted during the sample acceptance confirmation stage. Please refer to point 3 below. An indication of what you will be asked during the registration process is available <a href="http://amomin:81/ditchthepitch/sampleregistration/democlaimform">Sample On-line Registration Form.</a></p>
+    
+               <h4> 2. Eligibility:  </h4>
+              <p>As stated above, to be eligible to receive a bottle of wine for evaluation, you must be 18 years of age or older and you must reside in Australia. If you do not qualify on both of the conditions, you will not be sent a sample bottle. Furthermore, to be able to complete the registration process, you must reside within areas of Australia where it is legal to receive and consume alcohol.</p>
+            </div>
+
+            <div class="box box2">
+              <h4>3. Samples: </h4>
+              <p>If you are eligible and if your name is included in the next group of sample recipients, we will send you an email. We will email you to confirm that you are willing to receive a wine sample and that you are willing to participate in the valuation exercise according to the terms and conditions of the valuation. A sample of the email we will send at this stage of the process is available for viewing <a href="#email" rel="facebox">Sample Participation Email.</a> If you positively confirm both of these questions, you will be asked to provide your postal address details for us to send you the sample for review. </p>
+              <h4>4. Timeframe: </h4>
+              <p>It is important that people agreeing to receive samples honour their commitment to providing their value feedback within the agreed timeframe. The winery purchase opportunity for a given wine is posted on the Ditch the Pitch website 30 days after sample dispatch date. </p>
+              <h4>5. Feedback: </h4>
+              <p>Wine value feedback is required through the Ditch the Pitch website. A sample of the feedback form that you will be asked to complete on line is available <a href="http://amomin:81/ditchthepitch/feedback/demopage">Sample Feedback Form</a>. The key feedback information that we seek is your answer to the question … How much money would you be prepared to pay per bottle of the wine that you have evaluated if you were to purchase 1 dozen bottles and have them delivered to you via Australia Post?         The feedback form contains other questions that you may choose to answer. Further feedback is possible through the on-line discussion facility within the site.</p>
+              <br>
+            </div>
+
+            <div style="background:none" class="box box2">
+              <h4>6. Report: </h4>
+              <p>The feedback of a given wine is collated, analysed and presented to the winemaker in a report form. Upon receiving the report, and depending on the consumer valuation of a wine, the winemaker will choose to, or not to, present a public offer of the wine that was evaluated through the Ditch the Pitch website. The report is considered important market feedback to the producer. However, presenting an attractive wine purchase opportunity that is well supported will assist the winemaker in attaining a return on the overall investment in the Ditch the Pitch process. </p>
+              <h4>7. Offer: </h4>
+              <p>Should the winemaker choose to post an offer through the Ditch the Pitch website, it will generally be done for a designated quantity for a maximum period of time. The offer posted by the winemaker will be exclusive to Ditch the Pitch. The winemaker undertakes not to make the wine available at a lower price through any other medium for a minimum period. Therefore, not only do Ditch the Pitch consumers influence the wine selling price to ensure value, they also have access to exclusive wine buying opportunities. To minimize handling costs, wines purchased through Ditch the Pitch will actually be winery direct transaction with the wine being supplied directly from the winery to the purchaser. </p>
+            </div>
+        </div>
+        <div class="cb"></div>
+    </div>
+</div>
+<div id="email" style="display:none;">
+<p>Dear John,</p>
+
+<p>You previously registered as a willing person to receive a Free bottle of wine for the purpose of presenting your opinion on the value of the wine with Ditch the Pitch.</p>
+
+<p>It is our pleasure to advise you that we have now been presented a wine for sample distribution that is reasonably close to your preferred wine style preference.</p>
+
+<p>Before sending you the sample, we require a few things from you.</p>
+
+<p>1.	Your sample receipt postal details and<br>
+2.	Your confirmation that you are willing to receive the sample bottle of wine according to the terms and conditions of the valuation exercise.</p>
+
+<p>If you are familiar with our terms and conditions, the on-line process is reasonably straight forward.</p>
+<p>
+1. Follow the link for <a href="#">Ditchthepitch</a>.<br>
+2. Locate the titled Confirm Sample Receipt<br>
+3. Enter your email, <br>
+4. Enter your password and<br>
+5. The following unique code <b>ABKKKjp3</b>
+ </p>
+
+<p>From the time that we transmitted this email, you will have 96 hours to visit the website to complete the information that we require and confirm your participation.<br/> Should this time expire without us receiving your confirmation, then we will be unable to send you the wine for evaluation.</p>
+
+<p>We look forward to receiving your confirmation of participation and postal details.</p>
+<p>
+Best wishes,<br>
+The Ditch the pitch team.
+</p>
+</div>
+<div id="outerFooter">
+            <div id="footer">
+                <div class="heading">
+                    <p>
+                        At Ditch the Pitch, there is only one wine value that counts...Yours!
+                    </p>
+                </div>
+                <div class="col col1" style="width: 205px">
+                    <h3>
+                        Register as a Winery</h3>
+                    <form action="http://amomin:81/ditchthepitch/contactus/registerwinery" method="post" accept-charset="utf-8">    
+                    <input type="text" name="name" class="input" value="Name" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <input type="text" name="email" class="input" value="Email" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <input type="text" name="winery" class="input" value="Winery Name" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <input type="text" name="subject" class="input" value="Subject" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <textarea name="msg" cols="" rows="20" class="input" style="height: 95px;" onfocus="clearText(this)" onblur="clearText(this)" >Message</textarea>
+                    <br />
+                    <input type="hidden" name="post" value="1" />
+                    <p><input type="image" src="http://amomin:81/ditchthepitch/assets/images/btn_submit.png" alt="submit" /></p>
+                </div>
+                <div class="col col2">
+                    <h3>
+                        Ad of User</h3>
+                    <div id="add_user_bg">
+                        <img src="http://amomin:81/ditchthepitch/assets/images/addUser_img.jpg" width="219" height="126" style="margin-top: 36px;" /></div>
+                </div>
+                </form>                <div class="col col3">
+                    <h3>
+                        Ditch the Pitch</h3>
+                    <p class="txt_gray">
+                        Proin sit amet nisi vitae eros faucibus tincidunt. Donec vehicula mi sit amet mauris
+                        ornare consequat. Vivamus id ullamcorper tortor. Nunc at enim vel ligula mollis
+                        convallis fringilla id dui. Nullam vitae sapien vitae purus scelerisque egestas
+                        eget non dui. Fusce at sem dolor, vitae volutpat sapien. Integer felis mauris, consectetur
+                        at tempus vitae.
+                    </p>
+                    <p class="social">
+                        <a href="#">
+                            <img src="http://amomin:81/ditchthepitch/assets/images/fb1.png" border="0" /></a> <a href="#">
+                                <img src="http://amomin:81/ditchthepitch/assets/images/twtr2.png" border="0" /></a> <a href="#">
+                                    <img src="http://amomin:81/ditchthepitch/assets/images/link2.png" border="0" /></a> <a href="#">
+                                        <img src="http://amomin:81/ditchthepitch/assets/images/rss2.png" border="0" /></a> <a href="#">
+                                            <img src="http://amomin:81/ditchthepitch/assets/images/3rss.png" border="0" /></a></p>
+                </div>
+                <div class="col col4" style="width: 243px">
+               <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 3,
+				  interval: 30000,
+				  width: 250,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#0f020f',
+				      color: '#ffffff'
+				    },
+				    tweets: {
+				      background: '#000000',
+				      color: '#ffffff',
+				      links: '#e80000'
+				    }
+				  },
+				  features: {
+				    scrollbar: false,
+				    loop: true,
+				    live: false,
+				    behavior: 'default'
+				  }
+				}).render().setUser('thewinegrowers').start();
+				</script>
+                </div>
+                <div class="cb"></div>
+                <div id="footer_btm">
+                    <div class="copyright">
+                        Copyright 2011 - <strong>Ditch the Pitch</strong><br />
+                        <br />
+                        <p>
+                            Warning Under the Liquor Control Act 1988, it is an offence: to sell or supply liquor
+                            to a person under the age of 18 years on licensed or regulated premises; or for
+                            a person under the age of 18 years to purchase, or attempt to purchase, liquor on
+                            licensed or regulated premises.</p>
+                    </div>
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="http://amomin:81/ditchthepitch/home/aboutus">about</a></li>
+                            <li><a href="http://amomin:81/ditchthepitch/home/privacy">privacy</a></li>
+                            <li><a href="#">advertise</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="http://amomin:81/ditchthepitch/home/faqs">faq</a></li>
+                            <li><a href="http://amomin:81/ditchthepitch/contactus">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

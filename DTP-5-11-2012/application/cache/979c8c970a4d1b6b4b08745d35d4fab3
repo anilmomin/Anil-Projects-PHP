@@ -1,0 +1,492 @@
+1350635851TS---><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Ditch the Pitch</title>
+
+<link rel="stylesheet" href="http://pwbcleint.com/ditchthepitch/assets/css/style.css" type="text/css" media="screen"/>
+
+	<!-- Add Dynamic CSS Sources and CSS Scripts -->
+				
+			<style type="text/css">
+					</style>
+	
+<script type="text/javascript" src="http://pwbcleint.com/ditchthepitch/assets/js/cufon.js"></script>
+<script type="text/javascript" src="http://pwbcleint.com/ditchthepitch/assets/js/myriad-pro.cufonfonts.js"></script>
+<script src="http://pwbcleint.com/ditchthepitch/assets/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="http://pwbcleint.com/ditchthepitch/assets/js/facebox/facebox.js" type="text/javascript"></script>
+<script src="http://pwbcleint.com/ditchthepitch/assets/js/popup.js" type="text/javascript"></script>
+<!-- Adds the dynamic javascript files -->
+			
+<script type="text/javascript">
+
+Cufon.replace('#header .navigation li a, #footer .heading', { fontFamily: 'Myriad Pro Condensed', hover: true });
+Cufon.replace('#content .banner p, #content ul.registrationArea h3', { fontFamily: 'Myriad Pro Semibold', hover: true });
+Cufon.replace('#footer .col h3', { fontFamily: 'Myriad Pro Regular', hover: true });
+Cufon.replace('#bottleArea h1', { fontFamily: 'Myriad Pro Condensed', hover: true, textShadow: '1px 1px #666' });
+Cufon.replace('#footer .col h3,.banner strong', { fontFamily: 'Myriad Pro Regular', hover: true });
+Cufon.replace('#bottleArea h1', { fontFamily: 'Myriad Pro Condensed', hover: true, textShadow: '1px 1px #666' });
+Cufon.replace('.banner strong', { fontFamily: 'Myriad Pro Regular', hover: true, textShadow: '1px 1px #4e0503', hover: true });
+Cufon.replace('.content .banner p, #content ul.registrationArea h3', { fontFamily: 'Myriad Pro Semibold', hover: true });
+Cufon.replace('.dayContent strong', { fontFamily: 'Myriad Pro Regular', hover: true, textShadow: '1px 1px #4e0503',});
+
+function clearText(field) 
+{
+
+    if (field.defaultValue == field.value) field.value = '';
+
+    else if (field.value == '') field.value = field.defaultValue;
+
+}
+<!-- Add the javascript script text  --> 
+ 
+
+jQuery(document).ready(function($){
+	$('a[rel*=facebox]').facebox({
+	        loadingImage : 'http://pwbcleint.com/ditchthepitch/assets/js/facebox/loading.gif',
+	        closeImage   : 'http://pwbcleint.com/ditchthepitch/assets/js/facebox/closelabel.png'
+	      });
+	$("#winepref1").click(function(){
+		$("#content_pane1").hide();
+		$("#content_pane2").show();
+		
+	});	
+	
+    $("#wineprefback").click(function(){
+		    $("#content_pane2").hide();
+		    $("#content_pane1").show();
+		
+	    });	
+    
+    $("#loginsubmit").click(function(){
+        	
+			
+			var statuschk = true;
+			
+    		if($("#loginemail").val() == "")
+    		{
+				statuschk = false;
+				$("#err1").show();
+				
+            }
+    		else
+    		{
+    			statuschk = true;
+    			$("#err1").hide();
+        	}
+
+			if($("#loginpassword").val() == "")
+			{
+				statuschk = false;
+				$("#err2").show();
+			}
+			else
+			{
+				statuschk = true;
+				$("#err2").hide();
+			}	
+
+			if(statuschk == false)
+			{
+				$("#mainerror").show();
+			}
+			else
+			{
+				$("#mainerror").hide();
+				$("#formlogin").submit();
+			}
+        	
+        });
+
+   });
+
+jQuery(window).load(function(){
+	$("#statusmsg").delay(2800).fadeOut(900);
+	
+});
+
+</script>
+
+</head>
+
+<body> 
+
+<div id="header">
+        <div class="logo">
+            <a href="http://pwbcleint.com/ditchthepitch/">
+                <img src="http://pwbcleint.com/ditchthepitch/assets/images/logo.png" border="0" /></a>
+        </div>
+        <div class="topNav">
+        		
+               
+            <ul class="topNavigation">
+	                            <li><a href="http://pwbcleint.com/ditchthepitch/shoppingcart/displaycart"><b style="font-size:15px"><img src="http://pwbcleint.com/ditchthepitch/assets/images/cart.png"/></b></a></li>
+                                <li><a href="#" id="loginlink" class='active'><b style="font-size:15px"><img src="http://pwbcleint.com/ditchthepitch/assets/images/suscribe.png"/></b></a></li>
+                <li id="topsocial">
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fditchthepitch.com.au%2F&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:47px; height:25px;" allowTransparency="true"></iframe> </li><li>
+            <a href="https://twitter.com/thewinegrowers" class="twitter-follow-button" data-width="65px" data-show-count="false" data-show-screen-name="false">Follow @thewinegrowers</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> </li><li>
+<a href="#"><img src="http://pwbcleint.com/ditchthepitch/assets/images/linkedin.png" border="0" /></a>  </li><li>
+<a href="http://feedity.com/perthwebsitebuilders-com-au/UFtRUltV.rss"><img src="http://pwbcleint.com/ditchthepitch/assets/images/feeds.png" height="22" width="21" border="0" /></a>
+		</li>	
+            </ul>
+        </div>
+        <div class="cb">
+        </div>
+        <div class="brd">
+        </div>
+                <ul class="navigation">
+            <li><a  href="http://pwbcleint.com/ditchthepitch/">
+                                <img src="http://pwbcleint.com/ditchthepitch/assets/images/Hom_icn.jpg" align="absmiddle" />
+                                Home</a></li>
+            <li><a  href="http://pwbcleint.com/ditchthepitch/latestoffers">Recent offers</a></li>
+            <li><a  href="http://pwbcleint.com/ditchthepitch/home/awards">Awards</a></li>
+            <li><a   href="http://pwbcleint.com/ditchthepitch/home/howitworks">How It Works</a></li>
+            <li><a  href="http://pwbcleint.com/ditchthepitch/home/faqs">FAQ's</a></li>
+            <li><a  href="http://pwbcleint.com/ditchthepitch/contactus">Contact us</a></li>
+            <li><a  href="http://pwbcleint.com/ditchthepitch/latestoffer"><img src="http://pwbcleint.com/ditchthepitch/assets/images/btnlatestoffer.png"/></a></li>
+            <li><a  href="http://pwbcleint.com/ditchthepitch/latestoffer"><img src="http://pwbcleint.com/ditchthepitch/assets/images/menulogin.png"/></a></li>
+        </ul>
+<div  > </div>
+<div id="statusmsg" class="messege blue" style="display:none;">
+                    <p>
+                                           </p>
+	</div>
+</div>
+    
+<div id="loginpopup">
+       <div class="popup">
+                <div style="background-image:url('http://pwbcleint.com/ditchthepitch/assets/images/bgContentArea.jpg');" class="content">
+
+<!-- LOGIN FORM -->	    
+<div id="loginform" >
+
+<a href="#" id="popupContactClose" class="close"><img src="http://pwbcleint.com/ditchthepitch/assets/js/facebox/closelabel.png" title="close" class="close_image" /></a>
+<form action="http://pwbcleint.com/ditchthepitch/auth/login" method="post" accept-charset="utf-8" name="formlogin" id="formlogin">
+<table class="block">
+	<tr>
+        <td style="width:75px" ><label for="login">Email:</label></td>
+		<td>
+		<input type="text" id="loginemail" class="input_reg" name="loginemail" /><span id="err1" class="hide error"> *</span></td>
+	</tr>
+<tr>
+<td>&nbsp;
+</td>
+</tr>
+	<tr>
+		<td><label for="login">Password:</label></td>
+		<td><input type="password" class="input_reg" id="loginpassword" name="loginpassword" /><span id="err2" class="hide error"> *</span></td>
+	</tr>
+
+
+		<tr>
+	<td>&nbsp;</td>
+		<td colspan="3">
+			<br>
+			<input type="checkbox" name="remember" value="1" id="remember" style="margin:0;padding:0"  />			<label for="remember">Remember me</label>		</td>
+	</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<a href="javascript:void(0);" name="loginsubmit" id="loginsubmit" ><img src="http://pwbcleint.com/ditchthepitch/assets/images/login.png" alt="login" /></a>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><a href="auth/forgot_password/" style="float:right" style="float:right"	 class="forget">Forgotten password</a></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span id="mainerror" class="error hide">* All fields are required</span></td>
+</tr>
+</table>
+</form></div>
+</div>
+</div>
+</div>
+<div class="loginpopup_hide loginpopup_overlayBG" style="display:none;" id="loginpopup_overlay"></div>
+
+        <!-- 	CONTENT -->
+							<style>
+	error, label.error { display:none; }
+	
+</style>
+
+<div id="standardArc">
+
+    </div>
+
+    <div id="outerContent">
+
+        <div class="content">
+
+            <div class="banner">
+
+                <img src="http://pwbcleint.com/ditchthepitch/assets/images/Registration.png" width="960" height="216" />
+
+                <p style="font-size:40px">User Registration System</p>
+
+            </div>
+<div id="para">
+    <p>
+
+        <span class="redhdng"><strong>Wine Value Feedback Form</strong></span><br />
+
+        <br />
+
+        <p>
+
+            Please complete the following feedback form as accurately as you can.</p>
+
+        <p>
+
+          Your comments will be included in the report provided to the winemaker yet your identity will not be included anywhere in the report. The more feedback you provide, the more beneficial the report will be.
+          </p>
+
+        <p>
+
+           Please consider the value question as carefully as you can. Not only does it influence the livelihood of a wine producer, it could determine if you become eligible for the `Ditch the Pitch Wine Taster of the Year`! To be eligible for this prestigious title, you need to nominate the wine value that is closest to the average response from all of those who value this wine.
+        </p>
+        <p>&nbsp;</p>
+
+</div>
+            
+            
+<div class="reg" id="divfeedback" >
+            <form action="http://pwbcleint.com/ditchthepitch/feedback" method="post" accept-charset="utf-8" id="feedbackform" name="feedbackform">
+       <p class="feedbackitem">
+			<label for="winebrand">Wine Brand</label><br>
+            <input name="winebrand" type="text" class="input_reg1" value=""  /><br>
+                   </p>
+           
+			
+        <p class="feedbackitem">
+			<label for="vintage">Vintage</label><br>
+            <input name="vintage" type="text" class="input_reg1" value=""  /><br />
+					</p>	
+        <p class="feedbackitem">
+			<label for="variety">Variety</label><br>
+            <input name="variety" type="text" class="input_reg1" value="" /><br />
+			        </p>
+
+        <p>
+
+          How much money would you be prepared to pay per bottle of the wine <br> that you have evaluated if you were to purchase 1 dozen bottles and have them  <br> delivered to you via Australia Post? (Price per dozen, including postage, divided by 12)
+
+        </p>
+        <p >
+
+            $<input name="estvalue" type="text" size="6" maxlength="8" class="input_reg2 feedbackinput" value="" />
+                </p>
+		<p>&nbsp;</p>
+        <strong class="red1">With 1 being a poor score and 10 being the best score:</strong>
+		
+        <p>
+<br />
+            <strong>What is your quality score on the wine?</strong>
+</p>
+      
+        	<ul >
+        	<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>        	
+        	</ul>
+        	
+        	<input type="radio" name="quality" validate="required:true" class="spacer" value="1" />&nbsp;<input type="radio" name="quality" class="spacer" value="2" />&nbsp;<input type="radio" name="quality" class="spacer" value="3" />&nbsp;<input type="radio" name="quality" class="spacer" value="4" />&nbsp;<input type="radio" name="quality" class="spacer" value="5" />&nbsp;<input type="radio" name="quality" class="spacer" value="6" />&nbsp;<input type="radio" name="quality" class="spacer" value="7" />&nbsp;<input type="radio" name="quality" class="spacer" value="8" />&nbsp;<input type="radio" name="quality" class="spacer" value="9" />&nbsp;<input type="radio" name="quality" class="spacer" value="10" />&nbsp;<br>        	<label for="quality" class="error"  >Please select an option</label>
+       <p>
+<br />
+            <strong>Does the wine meet your style expectations?	</strong>
+       </p>
+
+        
+			<ul >
+        	<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>        	
+        	</ul>
+            <input type="radio" name="style" validate="required:true" class="spacer" value="1" />&nbsp;<input type="radio" name="style" class="spacer" value="2" />&nbsp;<input type="radio" name="style" class="spacer" value="3" />&nbsp;<input type="radio" name="style" class="spacer" value="4" />&nbsp;<input type="radio" name="style" class="spacer" value="5" />&nbsp;<input type="radio" name="style" class="spacer" value="6" />&nbsp;<input type="radio" name="style" class="spacer" value="7" />&nbsp;<input type="radio" name="style" class="spacer" value="8" />&nbsp;<input type="radio" name="style" class="spacer" value="9" />&nbsp;<input type="radio" name="style" class="spacer" value="10" />&nbsp;<br>        	<label for="style" class="error"  >Please select an option</label>
+        <p>
+<br />
+            <strong>Do you like the look of the label?</strong>
+            </p>
+
+       <ul >
+        	<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>        	
+        	</ul>
+            <input type="radio" name="label" validate="required:true" class="spacer" value="1" />&nbsp;<input type="radio" name="label" class="spacer" value="2" />&nbsp;<input type="radio" name="label" class="spacer" value="3" />&nbsp;<input type="radio" name="label" class="spacer" value="4" />&nbsp;<input type="radio" name="label" class="spacer" value="5" />&nbsp;<input type="radio" name="label" class="spacer" value="6" />&nbsp;<input type="radio" name="label" class="spacer" value="7" />&nbsp;<input type="radio" name="label" class="spacer" value="8" />&nbsp;<input type="radio" name="label" class="spacer" value="9" />&nbsp;<input type="radio" name="label" class="spacer" value="10" />&nbsp;<br>        	<label for="label" class="error"  >Please select an option</label>
+         <p>
+<br />
+            <strong>Does the label deliver the information that you seek?</strong>
+            </p>
+
+        <ul >
+        	<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>        	
+        	</ul>
+            <input type="radio" name="labelInfo" validate="required:true" class="spacer" value="1" />&nbsp;<input type="radio" name="labelInfo" class="spacer" value="2"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="3"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="4"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="5"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="6"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="7"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="8"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="9"/>&nbsp;<input type="radio" name="labelInfo" class="spacer" value="10"/>&nbsp;<br>        	<label for="labelInfo" class="error"  >Please select an option</label>
+         <p>
+<br />	
+            <strong>Do you have any comments that you wish to make relating to the wine generally, the wine quality, the style, or even the label? </strong></p>
+
+        <p >
+
+            <textarea name="comments" cols="" rows="" class="txt_area_reg1"></textarea></p>
+
+        <p>
+
+            And now two questions from Ditch the Pitch.</p>
+
+        <p>
+
+            How did you Hear about us?</p>
+
+        <p >
+
+            <select name="hearaboutus" class="input_reg1 dropDown required">
+
+                <option   selected="selected" value="">Please Select</option>
+                <option   value="radio">Radio</option>
+                <option  value="tv">TV</option>
+                <option  value="newspaper">Newspaper</option>
+                <option  value="internet">Internet</option>
+           </select>
+           <br>
+				<label for="hearaboutus" class="error">Please select an option</label>
+        </p>
+
+        <p>
+
+            In your opinion, how can we do things right?</p>
+
+        <p class="feedbackitem">
+
+            <textarea name="opinion" cols="" rows="" class="txt_area_reg1" ></textarea></p>
+            
+            
+       <p class="feedbackitem">
+<label for="encycode" >Access Code</label><br>
+            <input name="encycode" type="text" class="input_reg1" value="" />
+            
+            </p>
+			        <p>
+            
+
+        <br />
+
+        <br />
+
+        <p align="left">
+<input type="image" src="http://pwbcleint.com/ditchthepitch/assets/images/btn_submit2.png"  name="submit" /></p>
+<input type="hidden" value="1" name="post">
+    	<p>&nbsp;</p>
+</form></div>
+
+            <div class="cb">
+
+            </div>
+
+        </div>
+
+    </div>
+
+<div id="outerFooter">
+            <div id="footer">
+                <div class="heading">
+                    <p>
+                        At Ditch the Pitch, there is only one wine value that counts...Yours!
+                    </p>
+                </div>
+                <div class="col col1" style="width: 205px">
+                    <h3>
+                        Register as a Winery</h3>
+                    <form action="http://pwbcleint.com/ditchthepitch/contactus/registerwinery" method="post" accept-charset="utf-8">    
+                    <input type="text" name="name" class="input" value="Name" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <input type="text" name="email" class="input" value="Email" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <input type="text" name="winery" class="input" value="Winery Name" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <input type="text" name="subject" class="input" value="Subject" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <textarea name="msg" cols="" rows="20" class="input" style="height: 95px;" onfocus="clearText(this)" onblur="clearText(this)" >Message</textarea>
+                    <br />
+                    <input type="hidden" name="post" value="1" />
+                    <p><input type="image" src="http://pwbcleint.com/ditchthepitch/assets/images/btn_submit.png" alt="submit" /></p>
+                </div>
+                <div class="col col2">
+                    <h3>
+                        How it Works</h3>
+                    <div id="add_user_bg"><iframe width="221px" height="205px" src="http://www.youtube.com/embed/dJfyGU6ZR4k" frameborder="0" allowfullscreen></iframe>
+                        <!-- <img src="http://pwbcleint.com/ditchthepitch/assets/images/addUser_img.jpg" width="219" height="126" style="margin-top: 36px;" />--></div>
+                </div>
+                </form>                <div class="col col3">
+                    <h3>
+                        Ditch the Pitch</h3>
+                    <p class="txt_gray">
+                        Proin sit amet nisi vitae eros faucibus tincidunt. Donec vehicula mi sit amet mauris
+                        ornare consequat. Vivamus id ullamcorper tortor. Nunc at enim vel ligula mollis
+                        convallis fringilla id dui. Nullam vitae sapien vitae purus scelerisque egestas
+                        eget non dui. Fusce at sem dolor, vitae volutpat sapien. Integer felis mauris, consectetur
+                        at tempus vitae.
+                    </p>
+                    <p class="social">
+                        <a href="#">
+                            <img src="http://pwbcleint.com/ditchthepitch/assets/images/fb1.png" border="0" /></a> <a href="#">
+                                <img src="http://pwbcleint.com/ditchthepitch/assets/images/twtr2.png" border="0" /></a> <a href="#">
+                                    <img src="http://pwbcleint.com/ditchthepitch/assets/images/link2.png" border="0" /></a> <a href="#">
+                                        <img src="http://pwbcleint.com/ditchthepitch/assets/images/rss2.png" border="0" /></a> <a href="#">
+                                            <img src="http://pwbcleint.com/ditchthepitch/assets/images/3rss.png" border="0" /></a></p>
+                </div>
+                <div class="col col4" style="width: 243px">
+               <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 3,
+				  interval: 30000,
+				  width: 250,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#0f020f',
+				      color: '#ffffff'
+				    },
+				    tweets: {
+				      background: '#000000',
+				      color: '#ffffff',
+				      links: '#e80000'
+				    }
+				  },
+				  features: {
+				    scrollbar: false,
+				    loop: true,
+				    live: false,
+				    behavior: 'default'
+				  }
+				}).render().setUser('thewinegrowers').start();
+				</script>
+                </div>
+                <div class="cb"></div>
+                <div id="footer_btm">
+                    <div class="copyright">
+                        Copyright 2011 - <strong>Ditch the Pitch</strong><br />
+                    </div>
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="http://pwbcleint.com/ditchthepitch/home/aboutus">About</a></li>
+                             <li><a href="http://pwbcleint.com/ditchthepitch/home/privacy" >Privacy</a></li>
+                			<li><a href="http://pwbcleint.com/ditchthepitch/home/terms" >Terms and Conditions</a></li>
+                            <li><a href="http://pwbcleint.com/ditchthepitch/history">History</a></li>
+                        </ul>
+                    </div>
+                          <div style="clear:both;"></div>           
+                        <div style="width:500px; margin-top:20px; margin-left:20px">
+                            Warning Under the Liquor Control Act 1988, it is an offence: to sell or supply liquor
+                            to a person under the age of 18 years on licensed or regulated premises; or for
+                            a person under the age of 18 years to purchase, or attempt to purchase, liquor on
+                            licensed or regulated premises.</div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
