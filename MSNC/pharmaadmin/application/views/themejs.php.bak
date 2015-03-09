@@ -1,0 +1,728 @@
+
+	$(function(){
+
+			
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3" });
+	
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				// Dialog			
+				$('#dialog').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					width: 600,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$('a.progress img.status').attr('src','../../assets/images/grey.png');
+							$('a.progress').parent().find('> img:first').attr('src','../../assets/images/red.png');
+							$('a.progress').removeClass('progress');
+							
+							$('img.grey').removeClass('grey');
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							$('a.progress  img.status').attr('src','../../assets/images/yellow.png');
+							$('a.progress img.status').insertAfter('a.progress');
+							$('a.progress').remove();
+							$('img.grey').attr('src','../../assets/images/grey.png');
+							$('img.grey').removeClass('grey');
+							
+						} 
+					}
+				});
+				
+				$( "#dialog").parent().addClass("dialog");
+				
+				// Dialog Link
+				$('.dialog_link').click(function(){
+					$('#dialog').dialog('open');
+					$(this).addClass('progress');
+					$(this).find('img.status').attr('src','../../assets/images/yellow.png');
+					$(this).parent().find('> img:first').addClass('grey').attr('src','../../assets/images/grey.png');
+					return false;
+				});
+				
+				// Dialog Link 2		
+				$('#dialog_link2').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					width: 600,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$('a.progress img.status').attr('src','../../assets/images/grey.png');
+							$('a.progress').parent().find('> img:first').attr('src','../../assets/images/red.png');
+							$('a.progress').removeClass('progress');
+							
+							$('img.grey').removeClass('grey');
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							$('a.progress  img.status').attr('src','../../assets/images/yellow.png');
+							$('a.progress img.status').insertAfter('a.progress');
+							$('a.progress').remove();
+							$('img.grey').attr('src','../../assets/images/grey.png');
+							$('img.grey').removeClass('grey');
+							
+						} 
+					}
+				});
+				
+				$( "#dialog_link2").parent().addClass("dialog_link2");
+				
+				// Dialog Link
+				$('.dialog_links2').click(function(){
+					$('#dialog_link2').dialog('open');
+					$(this).addClass('progress');
+					$(this).find('img.status').attr('src','../../assets/images/yellow.png');
+					$(this).parent().find('> img:first').addClass('grey').attr('src','../../assets/images/grey.png');
+					return false;
+				});
+				
+				
+//------------------------------Details--------------------------//
+				$('#dialog_details').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_details").parent().parent().removeClass("deleted");
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							//$('#dialog_disp_sent').dialog('open');
+							
+						} 
+					}
+				});
+				
+				$('.dialog_details').click(function(){
+					$('#dialog_details').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					return false;
+				});
+				
+				$( "#dialog_details").parent().addClass("dialog_details");
+
+
+//------------------------------Details 2--------------------------//
+
+				$('#dialog_details2').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_details2").parent().parent().removeClass("deleted");
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							//$('#dialog_disp_sent').dialog('open');
+							
+						} 
+					}
+				});
+				
+				$('.dialog_details2').click(function(){
+					$('#dialog_details2').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					return false;
+				});
+				
+				$( "#dialog_details2").parent().addClass("dialog_details2");
+
+			
+//------------------------------ end Details--------------------------//
+
+//------------------------------Details 3--------------------------//
+
+				$('#dialog_details3').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_details3").parent().parent().removeClass("deleted");
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							//$('#dialog_disp_sent').dialog('open');
+							
+						} 
+					}
+				});
+				
+				$('.dialog_details3').click(function(){
+					$('#dialog_details3').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					return false;
+				});
+				
+				$( "#dialog_details3").parent().addClass("dialog_details3");
+			
+//------------------------------ end Details--------------------------//
+
+//------------------------------Details 4--------------------------//
+
+				$('#dialog_details4').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_details4").parent().parent().removeClass("deleted");
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							//$('#dialog_disp_sent').dialog('open');
+							
+						} 
+					}
+				});
+				
+				$('.dialog_details4').click(function(){
+					$('#dialog_details4').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					return false;
+				});
+				
+				$( "#dialog_details4").parent().addClass("dialog_details4");
+			
+//------------------------------ end Details--------------------------//
+
+
+
+
+		// accept			
+
+				// dispute			
+				$('#dialog_disp').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_disp").parent().parent().removeClass("deleted");
+							//$('img.prev').index();
+							//console.log($('img.prev').index());
+							
+							if($('img.prev').index() == 0){
+								   $('img.prev').attr('src','../../assets/images/red.png');
+								}
+							else {
+								   $('img.prev').attr('src','../../assets/images/yellow.png');
+								}
+								
+								$('img.prev').removeClass('prev');
+								$('img.current').attr('src','../../assets/images/grey.png').removeClass('current');
+							
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							$('#dialog_disp_sent').dialog('open');
+							
+							
+						} 
+					}
+				});
+				
+				$('.dialog_disp').click(function(){
+					$('#dialog_disp').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					
+					$(this).parent().find('img[src*="red"]').addClass('prev');
+					$(this).parent().find('img[src*="yellow"]').addClass('prev');
+					$(this).find('img').attr('src','../../assets/images/green.png').addClass('current');
+					$('img.prev').attr('src','../../assets/images/grey.png');
+					return false;
+				});
+				
+				$( "#dialog_disp").parent().addClass("dialog_disp");
+				// disp sent			
+				$('#dialog_disp_sent').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"ok": function() { 
+							$(this).dialog("close");
+							$("tr.deleted").hide("slow");
+						} 
+					}
+				});
+								
+				$( "#dialog_disp_sent").parent().addClass("dialog_disp_sent");
+/////--------------------Row 2--------------------------------------/////
+// accept			
+
+				// dispute			
+				$('#dialog_dispr2').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_dispr2").parent().parent().removeClass("deleted");
+							//$('img.prev').index();
+							//console.log($('img.prev').index());
+							
+							if($('img.prev').index() == 0){
+								   $('img.prev').attr('src','../../assets/images/red.png');
+								}
+							else {
+								   $('img.prev').attr('src','../../assets/images/yellow.png');
+								}
+								
+								$('img.prev').removeClass('prev');
+								$('img.current').attr('src','../../assets/images/grey.png').removeClass('current');
+							
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							$('#dialog_disp_sentr2').dialog('open');
+							
+							
+						} 
+					}
+				});
+				
+				$('.dialog_dispr2').click(function(){
+					$('#dialog_dispr2').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					
+					$(this).parent().find('img[src*="red"]').addClass('prev');
+					$(this).parent().find('img[src*="yellow"]').addClass('prev');
+					$(this).find('img').attr('src','../../assets/images/green.png').addClass('current');
+					$('img.prev').attr('src','../../assets/images/grey.png');
+					return false;
+				});
+				
+				$( "#dialog_dispr2").parent().addClass("dialog_dispr2");
+				// disp sent			
+				$('#dialog_disp_sentr2').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"ok": function() { 
+							$(this).dialog("close");
+							$("tr.deleted").hide("slow");
+						} 
+					}
+				});
+								
+				$( "#dialog_disp_sentr2").parent().addClass("dialog_disp_sentr2");
+				
+
+
+/////-------------------- Row 2 end --------------------------------------/////
+
+// accept In progress			
+
+				// dialog_In progress			
+				//$('#dialog_inprogress').dialog({
+//					autoOpen: false,
+//					buttons: {
+//						"cancel": function() { 
+//							$(this).dialog("close"); 
+//							$(".dialog_inprogress").parent().parent().removeClass("deleted");
+//						}, 
+//						"update": function() { 
+//							$(this).dialog("close");
+//							$('#dialog_inprogress_sent').dialog('open');
+//							
+//						} 
+//					}
+//				});
+//				
+//				$('.dialog_inprogress').click(function(){
+//					$('#dialog_inprogress').dialog('open');
+//					$(this).parent().parent().addClass("deleted");
+//					return false;
+//				});
+//				
+//				$( "#dialog_inprogress").parent().addClass("dialog_inprogress");
+//				// disp sent			
+//				$('#dialog_inprogress_sent').dialog({
+//					autoOpen: false,
+//					buttons: {
+//						"ok": function() { 
+//							$(this).dialog("close");
+//							//$("tr.deleted").hide("slow");
+//						} 
+//					}
+//				});
+//								
+//				$( "#dialog_inprogress_sent").parent().addClass("dialog_inprogress_sent");
+
+////////////////----------------- in progress 1----------------------------- ////////////////////////	
+				$('#dialog_inprogress').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_inprogress").parent().parent().removeClass("deleted");
+							//$('img.prev').index();
+							//console.log($('img.prev').index());
+							
+							if($('img.prev').index() == 0){
+								   $('img.prev').attr('src','../../assets/images/red.png');
+								}
+							else {
+								   $('img.prev').attr('src','../../assets/images/green.png');
+								}
+								
+								$('img.prev').removeClass('prev');
+								$('img.current').attr('src','../../assets/images/grey.png').removeClass('current');
+							
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							$('#dialog_inprogress_sent').dialog('open');
+							
+							
+						} 
+					}
+				});
+				
+				$('.dialog_inprogress').click(function(){
+					$('#dialog_inprogress').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					
+					$(this).parent().find('img[src*="green"]').addClass('prev');
+					$(this).parent().find('img[src*="yellow"]').addClass('prev');
+					$(this).find('img').attr('src','../../assets/images/yellow.png').addClass('current');
+					$('img.prev').attr('src','../../assets/images/grey.png');
+					return false;
+				});
+				
+				$( "#dialog_inprogress").parent().addClass("dialog_disp");
+				// disp sent			
+				$('#dialog_inprogress_sent').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"ok": function() { 
+							$(this).dialog("close");
+							$("tr.deleted").hide("slow");
+						} 
+					}
+				});
+								
+				$( "#dialog_inprogress_sent").parent().addClass("dialog_inprogress_sent");
+////////////////----------------- End  in progress 1----------------------------- ////////////////////////				
+
+////////////////----------------- in progress 2----------------------------- ////////////////////////	
+				$('#dialog_inprogressr2').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".dialog_inprogressr2").parent().parent().removeClass("deleted");
+							//$('img.prev').index();
+							//console.log($('img.prev').index());
+							
+							if($('img.prev').index() == 0){
+								   $('img.prev').attr('src','../../assets/images/red.png');
+								}
+							else {
+								   $('img.prev').attr('src','../../assets/images/green.png');
+								}
+								
+								$('img.prev').removeClass('prev');
+								$('img.current').attr('src','../../assets/images/grey.png').removeClass('current');
+							
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							$('#dialog_inprogress_sentr2').dialog('open');
+							
+							
+						} 
+					}
+				});
+				
+				$('.dialog_inprogressr2').click(function(){
+					$('#dialog_inprogressr2').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					
+					$(this).parent().find('img[src*="green"]').addClass('prev');
+					$(this).parent().find('img[src*="yellow"]').addClass('prev');
+					$(this).find('img').attr('src','../../assets/images/yellow.png').addClass('current');
+					$('img.prev').attr('src','../../assets/images/grey.png');
+					return false;
+				});
+				
+				$( "#dialog_inprogressr2").parent().addClass("dialog_disp");
+				// disp sent			
+				$('#dialog_inprogress_sentr2').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"ok": function() { 
+							$(this).dialog("close");
+							$("tr.deleted").hide("slow");
+						} 
+					}
+				});
+								
+				$( "#dialog_inprogress_sentr2").parent().addClass("dialog_inprogress_sentr2");
+////////////////----------------- End  in progress 2----------------------------- ////////////////////////	
+
+
+////////////////----------------- Publish ----------------------------- ////////////////////////	
+
+// dispute		
+				var recordId = '';
+				var trClass = '';
+					
+				$('#publish').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"cancel": function() { 
+							$(this).dialog("close"); 
+							$(".publish").parent().parent().removeClass("deleted");
+							//$('img.prev').index();
+							//console.log($('img.prev').index());
+						}, 
+						"update": function() { 
+							$(this).dialog("close");
+							//$('#publish_sent').dialog('open');							
+							
+						} 
+					}
+				});
+				
+				$('.publish').click(function(){
+					$('#publish_sent').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					recordId = $(this).attr('id');
+					return false;
+				});
+				
+				$( "#publish").parent().addClass("publish");
+				// disp sent	
+				trClass = $("#pendinggrid tr:last").attr('class');
+						
+				$('#publish_sent').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"no": function() { 
+							$(this).dialog("close"); 
+							$(".publish").parent().parent().removeClass("deleted");
+			
+						}, 
+						"yes": function() { 
+							$(this).dialog("close");
+							$("tr.deleted").hide("slow");
+							$.ajax({
+							  url: "<?php echo site_url('pharmaAction/publishsifiles')?>"+"/"+recordId,
+							  type: "POST",
+							  data: 'trClass'+trClass,
+							  cache: false,
+							  success: function(data) {
+									
+									$("#pendinggrid").append(data);
+									
+									
+							  }
+							});				
+							
+							
+							
+							
+						} 
+					}
+				});
+								
+				$( "#publish_sent").parent().addClass("publish_sent");
+				
+////////////////----------------- Publish End ----------------------------- ////////////////////////
+
+////////////////----------------- Delete ----------------------------- ////////////////////////	
+				
+				$('.deletepopup').click(function(){
+					$('#deletepopup_sent').dialog('open');
+					$(this).parent().parent().addClass("deleted");
+					recordId = $(this).attr('id');
+					return false;
+				});
+				
+				$( "#deletepopup").parent().addClass("deletepopup");
+				// disp sent			
+				
+				
+				$('#deletepopup_sent').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"no": function() { 
+							$(this).dialog("close"); 
+							$(".deletepopup").parent().parent().removeClass("deleted");
+			
+						}, 
+						"yes": function() { 
+							// ajax delete call anil						
+						 $.ajax({
+							  url: "<?php echo site_url('pharmaAction/deletesifiles')?>"+"/"+recordId,
+							  type: "POST",
+							  cache: false,
+							  success: function(data) {
+									
+							  }
+							});				
+				
+						
+						
+						
+							$(this).dialog("close");
+							$("tr.deleted").hide("slow");
+						} 
+					}
+				});
+								
+				$( "#deletepopup_sent").parent().addClass("deletepopup_sent");
+				
+////////////////----------------- Delete End ----------------------------- ////////////////////////
+
+
+////////////////----------------- Delete ----------------------------- ////////////////////////	
+				
+				$('.reportdetails').click(function(){
+					$('#reportbtn_popup').dialog('open');
+					//$(this).parent().parent().addClass("deleted");
+					recordId = $(this).attr('id');
+					
+					
+					 $.ajax({
+							  url: "<?php echo site_url('pharmaAction/getInstanceReport')?>"+"/"+recordId,
+							  type: "POST",
+							  cache: false,
+							  success: function(data) {
+									$("#reportbtn_popup").empty().append(data);
+							  }
+							});	
+					
+					return false;
+					
+					
+				});
+				
+				//$( "#deletepopup").parent().addClass("deletepopup");
+				// disp sent			
+				
+					
+				
+				$('#reportbtn_popup').dialog({
+					autoOpen: false,
+					resizable: false,
+					modal: true,
+					buttons: {
+						"ok": function() { 
+							$(this).dialog("close"); 
+							$(".reportdetails").parent().parent().removeClass("deleted");
+			
+						}
+					}
+				});
+								
+				$( "#reportbtn_popup").parent().addClass("deletepopup_sent");
+				
+//////////////////////// Report Detail End
+
+
+
+
+
+
+
+
+
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+				
+				// Slider
+				$('#slider').slider({
+					range: true,
+					values: [17, 67]
+				});
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					//function() { $(this).addClass('ui-state-hover'); }, 
+					//function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+
+				//anil
+		
+				$("#upload").click(function(){
+						$("#loading").show();
+						
+				});
+		
+		
+		
+		
+				var checked = '';
+				$('input[name="status"]').click(function(){
+					 checked = ($("input[name=status]:checked").map(
+						     	function () {return this.value;}).get().join(","));
+				});
+				
+				$(".archive").click(function () {
+				$(".archive-result").show('blind');
+				
+				  $.ajax({
+					  url: "<?php echo site_url('pharmaAction/getReport')?>",
+					  type: "POST",
+					  cache: false,
+					  data: "status="+checked+"&physician="+$("#physician").val()+"&minval="+ $("#minval").val() +"&maxval="+ $("#maxval").val() +"&begindate="+ $("#begindate").val()+"&enddate="+ $("#enddate").val() +"&speciality="+$("#speciality").val()+"&form="+ $("#form").val()+"&drugname="+$("#drugname").val()+"&nature="+$("#nature").val(),
+					  success: function(data) {
+							$("#reportgrid").empty().append(data);
+					  }
+					});
+				});
+				
+				$('.datepicker').datepicker({
+					showOn: "button",
+					buttonImage: "../../assets/images/calendar.gif",
+					buttonImageOnly: true
+				});
+				
+				
+			});
+

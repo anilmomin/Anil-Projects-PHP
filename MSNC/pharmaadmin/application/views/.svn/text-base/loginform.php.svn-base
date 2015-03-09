@@ -1,0 +1,42 @@
+<?php require_once 'designConstants.php';?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>Admin Login</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="<?php echo CSS_FOLDER . 'style.css'; ?>" type="text/css" media="screen"/>
+	<style type="text/css">
+	
+	body {
+	  font: 11px "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+      padding-top: 30px;
+    }
+	
+	
+	</style>
+	
+	
+</head>
+<body style="background: url('<?php echo IMG_FOLDER . "main-contentbg.jpg"; ?>') repeat-x scroll 0 0 transparent;">
+<div id="login">
+<h1><a title="Medi Spend" href="#"><img src="<?php echo IMG_FOLDER . 'logo-main.png'; ?>" alt="Medispend" /></a></h1>
+<?php 
+	echo form_open('login/doLogin');
+	if (isset($error))
+	{
+		echo '<p style="text-align:center"><font color="red">'.$error.'</font></p><br>';
+	}
+	echo "Email : " . form_input('username');
+	echo br(2);
+	echo "Password : " . form_password('password');
+	echo br(2);
+	echo form_checkbox('rememberme', 'yes') . "Remember Me";
+	echo br(2);
+	echo form_submit('submit', 'Login');
+	echo form_close();
+	
+?>
+
+</div>
+</body>
+</html>

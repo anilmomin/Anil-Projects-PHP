@@ -1,0 +1,42 @@
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+class AccessAdmin extends CI_Controller {
+
+	function __construct() 
+	{
+		parent :: __construct();	
+		$this->load->model(array('Authenticate', 'PharmaAdmin'));
+		
+	}
+	
+public function index(){
+	redirect(site_url('/accessadmin/accesspharma','redirect'));
+
+}	
+	
+	
+public function accessPharma($access_id = null){
+		
+		if($access_id)
+		{
+			$loginObject = array('pharmaId' => $access_id);
+			$pharmaCreditals = $this->PharmaAdmin->getByCriteria($loginObject, null, null, 'adminEmail, adminPassword');
+			$userName = $pharmaCreditals[0]->adminEmail;
+			$userPassword = $pharmaCreditals[0]->adminPassword;
+			
+			if($this->Authenticate->login($userName, $userPassword, false, true)){
+				
+				redirect(site_url('/pharmaaction/'),'redirect');	
+			}
+			else
+			{
+				
+				redirect(site_url('/login/'),'redirect');
+			}
+			
+			
+		}
+		
+	}
+	
+}
