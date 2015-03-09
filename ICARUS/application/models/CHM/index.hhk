@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="phpDocumentor 1.3.2 http://www.phpdoc.org">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Files">
+		<param name="Local" value="system-application-models\_persistenceInterface.php.html">
+		</OBJECT>
+	<UL>
+	
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="persistenceInterface.php">
+		<param name="Local" value="system-application-models\_persistenceInterface.php.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Classes">
+		<param name="Local" value="system-application-models\PersistenceInterface.html">
+		</OBJECT>
+	<UL>
+	
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PersistenceInterface">
+		<param name="Local" value="system-application-models\PersistenceInterface.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PersistenceInterface Methods">
+		<param name="Local" value="system-application-models\PersistenceInterface.html">
+		</OBJECT>
+	<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="getAll">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodgetAll">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="getByCriteria">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodgetByCriteria">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="getByPrimaryKey">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodgetByPrimaryKey">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="insert">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodinsert">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="update">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodupdate">
+		</OBJECT>
+		
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="delete">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methoddelete">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="getAll">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodgetAll">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="getByCriteria">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodgetByCriteria">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="getByPrimaryKey">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodgetByPrimaryKey">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="insert">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodinsert">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="update">
+		<param name="Local" value="system-application-models\PersistenceInterface.html#methodupdate">
+		</OBJECT>
+		
+</UL>
+</BODY></HTML>

@@ -1,0 +1,438 @@
+<html>
+<head>
+<title>Docs For Class PersistenceInterface</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">system-application-models</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_system-application-models.html" class="menu">class tree: system-application-models</a> ]
+		  [ <a href="../elementindex_system-application-models.html" class="menu">index: system-application-models</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_system-application-models.html">system-application-models</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../system-application-models/_persistenceInterface.inc.html">		persistenceInterface.inc
+		</a><br>
+			<a href="../system-application-models/_tableConstants.inc.html">		tableConstants.inc
+		</a><br>
+			<a href="../system-application-models/_user.php.html">		user.php
+		</a><br>
+	  </div><br />
+      
+            <b>Interfaces:</b><br />
+        <div class="package">
+		    		<a href="../system-application-models/PersistenceInterface.html">PersistenceInterface</a><br />
+	  </div>
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../system-application-models/User.html">User</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: PersistenceInterface</h1>
+Source Location: /persistenceInterface.inc<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Interface Overview</a></h3>
+<pre></pre><br />
+<div class="description">This is the persistence interface to be implemented by all persistence classes,  for all the db operations Active Records class of Code Igniter would be used.</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Amir Ali Jiwani &lt;<a href="mailto:studyboy5@hotmail.com">studyboy5@hotmail.com</a>&gt;</li>
+                        </ul>
+
+
+
+
+        
+          
+      
+<h4>Version:</h4>
+<ul>
+  <li>Release: 1.1</li>
+</ul>
+
+<h4>Copyright:</h4>
+<ul>
+  <li>2009-2010 SAFE (Icarus - Project)</li>
+</ul>
+        
+</td>
+
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../system-application-models/PersistenceInterface.html#methoddelete">delete</a></li>
+    <li><a href="../system-application-models/PersistenceInterface.html#methodgetAll">getAll</a></li>
+    <li><a href="../system-application-models/PersistenceInterface.html#methodgetByCriteria">getByCriteria</a></li>
+    <li><a href="../system-application-models/PersistenceInterface.html#methodgetByPrimaryKey">getByPrimaryKey</a></li>
+    <li><a href="../system-application-models/PersistenceInterface.html#methodinsert">insert</a></li>
+    <li><a href="../system-application-models/PersistenceInterface.html#methodupdate">update</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 14]<br />
+This is the persistence interface to be implemented by all persistence classes,  for all the db operations Active Records class of Code Igniter would be used.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Amir Ali Jiwani &lt;<a href="mailto:studyboy5@hotmail.com">studyboy5@hotmail.com</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>Release: 1.1</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>2009-2010 SAFE (Icarus - Project)</td>
+  </tr>
+  <tr>
+    <td><b>license:</b>&nbsp;&nbsp;</td><td><a href="http://www.php.net/license/3_0.txt">PHP License 3.0</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="methoddelete"></a>
+	<h3>method delete <span class="smalllinenumber">[line 104]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int delete(
+array
+$primaryKey)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		deletes the database by primary key condition supplied in the parameter.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the integer containing the number of rows affected after the delete                                         operation, minimum value of this int can be zero.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$primaryKey</b>&nbsp;&nbsp;</td>
+        <td>an array containing keys as the names of primary columns in                                         database and the value correspondant to it,                                         eg:- $primaryKey = array('Id' =&gt; 'AaoObBC'),                                          where Id is the pk column and AaoObBC is the value of it.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAll"></a>
+	<h3>method getAll <span class="smalllinenumber">[line 28]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getAll(
+[string
+$columnNames = '*'], [int
+$limitx = null], [int
+$limity = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		gets all the users from table without any condition to follow.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the array containing user objects from the user table,                                         where each feild is the datamember of the object, null in case                                         of no results.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$columnNames</b>&nbsp;&nbsp;</td>
+        <td>the string representing the column names to select from table.</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$limitx</b>&nbsp;&nbsp;</td>
+        <td>an integer representing the start limit of SQL.</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$limity</b>&nbsp;&nbsp;</td>
+        <td>an integer representing the end limit of SQL.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetByCriteria"></a>
+	<h3>method getByCriteria <span class="smalllinenumber">[line 69]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getByCriteria(
+array
+$criteria, [int
+$limitx = null], [int
+$limity = null], [string
+$columnNames = '*'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		gets all the users from table which fulfills the criteria supplied by parameter.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the array containing user objects from the user table,                                         where each feild is the datamember of the object, null in case                                         of no results.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$criteria</b>&nbsp;&nbsp;</td>
+        <td>an array containing keys as the names of table columns or names                                         with a condition (i.e. either 'id' or 'id &lt;') from the                                         database and the value correspondant to it, or it can be a                                         where clause string of SQL,                                         eg:- $criteria = array('Id' =&gt; 'AaoObBC');, or it can be like                                         eg:- $criteria = 'Id=\'AaoObBC\' OR something=\'value\'';                                         by default criteria works on AND method of SQL.</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$limitx</b>&nbsp;&nbsp;</td>
+        <td>an integer representing the start limit of SQL.</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$limity</b>&nbsp;&nbsp;</td>
+        <td>an integer representing the end limit of SQL.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$columnNames</b>&nbsp;&nbsp;</td>
+        <td>the string representing the column names to select from table.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetByPrimaryKey"></a>
+	<h3>method getByPrimaryKey <span class="smalllinenumber">[line 47]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getByPrimaryKey(
+array
+$primaryKey, [int
+$limitx = null], [int
+$limity = null], [string
+$columnNames = '*'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		gets user from table which fulfills the primary key condition supplied by parameter.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the array containing single user object from the user table,                                         where each feild is the datamember of the object, null in case                                         of no results.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$primaryKey</b>&nbsp;&nbsp;</td>
+        <td>an array containing keys as the names of primary columns in                                         database and the value correspondant to it,                                         eg:- $primaryKey = array('Id' =&gt; 'AaoObBC'),                                          where Id is the pk column and AaoObBC is the value of it.</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$limitx</b>&nbsp;&nbsp;</td>
+        <td>an integer representing the start limit of SQL.</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$limity</b>&nbsp;&nbsp;</td>
+        <td>an integer representing the end limit of SQL.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$columnNames</b>&nbsp;&nbsp;</td>
+        <td>the string representing the column names to select from table.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinsert"></a>
+	<h3>method insert <span class="smalllinenumber">[line 125]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int insert(
+array
+$object)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		inserts a new record int the database by primary key condition supplied in the array of object by parameter,  if any previous record is already present with the same primary key insert operation fails.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the integer would contain the last inserted id of database if insert is                                         sucessful, else a zero valued integer is returned.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$object</b>&nbsp;&nbsp;</td>
+        <td>the array containing all the feild to be inserted, with primary key(s),                                         as a must index.                                         eg:- $object = array (                                                         'id' =&gt; 24,                                                         'name' =&gt; 'Amir Ali',                                                         'dob' =&gt; '15-April-1989'                                                         );                                         in the above example id is the primary key, method would insert the                                         record with id = 24.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodupdate"></a>
+	<h3>method update <span class="smalllinenumber">[line 89]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int update(
+array
+$object)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		updates the database by primary key condition supplied in the array of object by parameter.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the integer containing the number of rows affected after the update                                         operation, minimum value of this int can be zero.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$object</b>&nbsp;&nbsp;</td>
+        <td>the array containing all the feild to be updated, with primary key(s),                                         as a must index.                                         eg:- $object = array (                                                         'id' =&gt; 24,                                                         'name' =&gt; 'Amir Ali',                                                         'dob' =&gt; '15-April-1989'                                                         );                                         in the above example id is the primary key, method would update the                                         record with id = 24.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 13 Mar 2009 18:03:22 +0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.2</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

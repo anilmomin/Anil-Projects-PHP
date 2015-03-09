@@ -1,0 +1,21 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=documentation.chm
+Contents file=contents.hhc
+Default topic=index.html
+Display compile progress=No
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=Generated Documentation
+
+[FILES]
+system-application-models\elementindex_system-application-models.html
+elementindex.html
+blank.html
+classtrees_system-application-models.html
+system-application-models\PersistenceInterface.html
+system-application-models\_persistenceInterface.php.html
+errors.html
+
+[INFOTYPES]
+
